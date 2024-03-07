@@ -27,3 +27,12 @@ As regras vão valer para todos os elementos/tags desta página.
 #### Externa
 
 É criado um arquivo de extensão CSS dedicado ás regras de formatação. Este arquivo é então "conectado" ás páginas HTML.
+
+##### Como fazer uma regra CSS?
+
+seletor { propriedade: valor; } 
+
+seletor { propriedade1: valor;
+          propriedade2: valor; 
+          propriedade3: valor;
+}
