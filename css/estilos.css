@@ -1,0 +1,16 @@
+/* Oque devemos fazer aqui? ADICIONAR AS REGRAS */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagens/tarde.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+div {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+}
+img {
+    max-width: 100%;
+}
