@@ -48,6 +48,16 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     border-top-left-radius: 7px;
-    text-shadow: 2px 2px 4px gray;
+    text-shadow: 2px 2px 4px black;
     border-top-right-radius: 8px;
+}
+
+h2 {
+    font-size: 20px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-left-width: 20px;
+    border-left-color: black;
+    padding-left: 9px;
 }
