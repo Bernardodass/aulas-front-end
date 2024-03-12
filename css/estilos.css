@@ -6,11 +6,48 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 div {
     background-color: white;
     width: 70%;
     margin: auto;
+    border-radius: 8px;
+
+    /* Espaçamento interno */
+    padding: 8px;
+
+    box-shadow: black 8px 5px 10px, purple -8px -5px 10px;
 }
+
+/* Tornando imagens felxíveis/expansivas */
 img {
     max-width: 100%;
+}
+
+figure {
+    text-align: center;
+}
+
+/* crie uma nova regra CSS para estilizar o elemento h1 com as seguintes caracteristicas 
+
+-fonte: impact, verdana, arial e sans-serif
+-cor de fundo: escura com um pouco de transparencia
+-cor do texto: clara
+espaçamento interno APENAS pra cima e pra baixo
+-letras maiusculas
+-texto alinhado no meio
+-bordas arredondadas APENAS nos cantos superiores
+-sombra no texto
+*/
+
+h1 {
+    font-family: Impact, Verdana, Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+    padding-top: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    border-top-left-radius: 7px;
+    text-shadow: 2px 2px 4px gray;
+    border-top-right-radius: 8px;
 }
