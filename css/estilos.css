@@ -66,3 +66,28 @@ h2 {
 -webkit, -moz, -o
 
 Propriedades relacionadas á determinados navegadores. Podem ter problemas  de compatibilidade*/
+
+
+
+/* seletor descendente (vale para todos os <a> contidos em <nav> */
+nav a {color: black;}
+
+figure img {
+transform: scale(0.6);
+transition: 0.5s;
+filter: grayscale(100%);
+}
+
+figure img:hover {
+    transform: scale(1) rotateX(360deg);
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+
+/* seletor tag (portanto vale para todos os "a" */
+ a {text-decoration: none;}
