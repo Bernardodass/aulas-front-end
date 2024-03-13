@@ -51,6 +51,7 @@ espaçamento interno APENAS pra cima e pra baixo
 */
 
 h1 {
+    margin: 0px;
     font-family: Impact, Verdana, Arial, sans-serif;
     background-color: rgba(0, 0, 0, 0.8);
     color: whitesmoke;
@@ -161,9 +162,15 @@ nav a {
 }
 
 /* regra para o estado de acionamento dos links */
-nav a:hover {
+nav a:hover, nav a:focus         {
     background-color: gray;
     transition: 0.5s;
 }
 
+nav a:first-child {
+border-bottom-left-radius: 8px;
+}
 
+nav a:last-child {
+border-bottom-right-radius: 8px;
+}
