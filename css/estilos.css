@@ -1,5 +1,13 @@
 /* Oque devemos fazer aqui? ADICIONAR AS REGRAS */
 
+
+/* seletor universal (*).
+alterando o comportamento do box model css. usando esta regra evitamos os problemas encontrados ao se usar width, height, padding e border ao memso tempo. */
+* {box-sizing: border-box}
+
+
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../imagens/tarde.jpg);
@@ -71,10 +79,8 @@ Propriedades relacionadas á determinados navegadores. Podem ter problemas  de c
 
 
 
-/* seletor descendente (vale para todos os <a> contidos em <nav> */
-nav a {
-    color: black;
-}
+
+
 
 figure img {
     transform: scale(0.6);
@@ -133,3 +139,31 @@ li {
     border-radius: 4px;
     margin-bottom: 30px;
 }
+
+
+/* regras para o menu e seus links */
+
+nav {text-align: center;}
+
+/* regra para o estado inicial dos links */
+
+/* seletor descendente (vale para todos os <a> contidos em <nav> */
+
+nav a {
+    color: black;
+    font-weight: bold;
+    background-color: antiquewhite;
+    display: inline-block;
+    width: 50%;
+    padding: 2%;
+    transition: 0.5s;
+    border: solid 1px;
+}
+
+/* regra para o estado de acionamento dos links */
+nav a:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
+
+
