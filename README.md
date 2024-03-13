@@ -30,13 +30,15 @@ As regras vão valer para todos os elementos/tags desta página.
 
 ##### Como fazer uma regra CSS?
 
+
+```css
 seletor { propriedade: valor; } 
 
 seletor { propriedade1: valor;
           propriedade2: valor; 
           propriedade3: valor;
 }
-
+```
 
 ---
 
