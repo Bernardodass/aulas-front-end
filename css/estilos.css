@@ -7,7 +7,9 @@ body {
     background-size: cover;
 }
 
-div {
+
+/* seletor identificado */
+#container {
     background-color: white;
     width: 70%;
     margin: auto;
@@ -88,11 +90,23 @@ figure img:hover {
 
 
 
-/* seletor agrupado (grupo de seletores */
+
+
+
+
+/* seletor tag (portanto vale para todos os "a" */
+a {
+    text-decoration: none;
+
+
+
+
+}/* seletor agrupado (grupo de seletores */
 p,
 li {
     font-size: 18px;
 }
+
 
 
 
@@ -113,8 +127,9 @@ li {
 }
 
 
-
-/* seletor tag (portanto vale para todos os "a" */
-a {
-    text-decoration: none;
+.destaques-back {
+    background-color: gray;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
