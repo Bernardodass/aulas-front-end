@@ -70,12 +70,14 @@ Propriedades relacionadas á determinados navegadores. Podem ter problemas  de c
 
 
 /* seletor descendente (vale para todos os <a> contidos em <nav> */
-nav a {color: black;}
+nav a {
+    color: black;
+}
 
 figure img {
-transform: scale(0.6);
-transition: 0.5s;
-filter: grayscale(100%);
+    transform: scale(0.6);
+    transition: 0.5s;
+    filter: grayscale(100%);
 }
 
 figure img:hover {
@@ -86,8 +88,33 @@ figure img:hover {
 
 
 
+/* seletor agrupado (grupo de seletores */
+p,
+li {
+    font-size: 18px;
+}
+
+
+
+/* seletor classe */
+.centralizar {
+    text-align: center;
+}
+
+.sombra {
+    text-shadow: black 1px 1px 3px;
+}
+
+.destaque {
+    background-color: gray;
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+}
 
 
 
 /* seletor tag (portanto vale para todos os "a" */
- a {text-decoration: none;}
+a {
+    text-decoration: none;
+}
