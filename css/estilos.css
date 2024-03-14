@@ -3,7 +3,9 @@
 
 /* seletor universal (*).
 alterando o comportamento do box model css. usando esta regra evitamos os problemas encontrados ao se usar width, height, padding e border ao memso tempo. */
-* {box-sizing: border-box}
+* {
+    box-sizing: border-box
+}
 
 
 
@@ -108,7 +110,9 @@ a {
 
 
 
-}/* seletor agrupado (grupo de seletores */
+}
+
+/* seletor agrupado (grupo de seletores */
 p,
 li {
     font-size: 18px;
@@ -144,7 +148,9 @@ li {
 
 /* regras para o menu e seus links */
 
-nav {text-align: center;}
+nav {
+    text-align: center;
+}
 
 /* regra para o estado inicial dos links */
 
@@ -162,17 +168,18 @@ nav a {
 }
 
 /* regra para o estado de acionamento dos links */
-nav a:hover, nav a:focus         {
+nav a:hover,
+nav a:focus {
     background-color: gray;
     transition: 0.5s;
 }
 
 nav a:first-child {
-border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 nav a:last-child {
-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 ul li {
@@ -194,11 +201,42 @@ ul li::marker {
     font-size: 24px;
 }
 
-ul li:first-child { font-weight: bold;}
-ul li:last-child { font-style: italic;}
-ul li:nth-child(3) { color: whitesmoke;}
+ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:last-child {
+    font-style: italic;
+}
+
+ul li:nth-child(3) {
+    color: whitesmoke;
+}
 
 
 /* cores alternadas */
-ul li:nth-child(even) {background: pink;} 
-ul li:nth-child(odd) {background: lightblue;}
+ul li:nth-child(even) {
+    background: pink;
+}
+
+ul li:nth-child(odd) {
+    background: lightblue;
+}
+
+details {
+    border: solid 2px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+summary::marker {
+    content: "😎";
+}
+
+/* seletor de atributo */
+details[open] summary::marker {
+    content: "😀";
+}
