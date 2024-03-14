@@ -174,3 +174,31 @@ border-bottom-left-radius: 8px;
 nav a:last-child {
 border-bottom-right-radius: 8px;
 }
+
+ul li {
+    color: purple;
+    list-style-type: square;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0px;
+    list-style-position: inside;
+}
+
+
+/* seletor pseudo-elemento ::marker para alterar o conteúdo do marcador da lista */
+ul li::marker {
+    content: "🐱‍👓";
+    font-size: 24px;
+}
+
+ul li:first-child { font-weight: bold;}
+ul li:last-child { font-style: italic;}
+ul li:nth-child(3) { color: whitesmoke;}
+
+
+/* cores alternadas */
+ul li:nth-child(even) {background: pink;} 
+ul li:nth-child(odd) {background: lightblue;}
