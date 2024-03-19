@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Flexbox</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		.caixa {
+			border: solid 1px;
+			width: 30%;
+			padding: 8px;
+		}
+		#exemplo-flexbox {
+			width: 80%;
+			margin: auto;
+			background-color: lightslategray;
+
+			/* Habilitando o Flexbox */
+			display: flex;
+
+		}
+
+	</style>
 
 </head>
+
 <body>
-    <h1>Flexbox</h1>
-    <hr>
-    <p>Flexbox é um mecanismo CSS que permite aplicar facilmente recursos de alinhamento, espaçamento e distribuição de elementos no HTML. Muito útil na elaboração de layouts. </p>
+	<h1>Flexbox</h1>
+	<hr>
+	<p>Flexbox é um mecanismo CSS que permite aplicar facilmente recursos de alinhamento, espaçamento e distribuição de
+		elementos no HTML. Muito útil na elaboração de layouts. </p>
 
-	
 
+<div id="exemplo-flexbox" >
 	<div class="caixa">
 		<img src="imagens/mini-apple.jpg" alt="">
 		<h2>Apple</h2>
@@ -34,9 +66,10 @@
 		<h2>Microsoft</h2>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil?</p>
 	</div>
-	
-	
+</div>
+
 
 
 </body>
+
 </html>
