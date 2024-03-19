@@ -23,18 +23,28 @@
 			width: 30%;
 			padding: 8px;
 		}
+
 		#exemplo-flexbox {
 			width: 80%;
-			height: 600px;
+			height: 1100px;
 			margin: auto;
 			background-color: lightslategray;
 
 			/* Habilitando o Flexbox */
 			display: flex;
-			justify-content: space-between;
-			align-items: flex-start;
-		}
 
+			/*justify-content
+			Em direção padrão "row", se comporta como alinhamento horizontal 
+			
+			Se estiver na direção "collumn", se comporta como alinhamento vertical */
+			justify-content: space-between;
+
+			/* align-items funciona de forma contrária. Ou seja, em modo "row" alinha verticalmente. Em modo "collumn", alinha horizontalmente. */
+			align-items: center;
+
+			flex-direction: column;
+			/* row padrão */
+		}
 	</style>
 
 </head>
@@ -46,29 +56,29 @@
 		elementos no HTML. Muito útil na elaboração de layouts. </p>
 
 
-<div id="exemplo-flexbox" >
-	<div class="caixa">
-		<img src="imagens/mini-apple.jpg" alt="">
-		<h2>Apple</h2>
-		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsam.</p>
+	<div id="exemplo-flexbox">
+		<div class="caixa">
+			<img src="imagens/mini-apple.jpg" alt="">
+			<h2>Apple</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsam.</p>
+		</div>
+
+
+
+		<div class="caixa">
+			<img src="imagens/mini-ibm.jpg" alt="">
+			<h2>IBM</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil?</p>
+		</div>
+
+
+
+		<div class="caixa">
+			<img src="imagens/mini-microsoft.jpg" alt="">
+			<h2>Microsoft</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil?</p>
+		</div>
 	</div>
-
-
-
-	<div class="caixa">
-		<img src="imagens/mini-ibm.jpg" alt="">
-		<h2>IBM</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil?</p>
-	</div>
-
-
-
-	<div class="caixa">
-		<img src="imagens/mini-microsoft.jpg" alt="">
-		<h2>Microsoft</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nihil?</p>
-	</div>
-</div>
 
 
 
