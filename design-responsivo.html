@@ -42,13 +42,51 @@
         /* Etapa 2:
 Regras de uso condicional, ou seja, estulos que vão ser aplicados de acordo com determinadas condições (tamanhos de tela). */
 
+        /* Media Queries (consultas de mídia) */
+        @media screen and (min-width: 600px) {
+            body {
+                background-color: plum;
+            }
 
+            h1 {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+
+        @media screen and (min-width: 777px) {
+            body {
+                background-color: lightgoldenrodyellow;
+            }
+
+            .exemplo {
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            strong {
+                color: rgb(9, 79, 184);
+            }
+        }
+
+        /* Exercício
+
+        1- Faça uma regra condicional para telas com tamanho maior ou igual a 777px em que as seguites adaptações aconteçam:
+        
+        - A div exemplo deve ter largura de 75% e ficar no meio
+        - Os negritos devem ter outra cor (fundo e/ou texto)
+        - O tamanho dos parágrafos deve subir para 18px
+        - Cor de fundo da página deve voltar á cor original */
     </style>
 
 </head>
 
 <body>
-    <div>
+    <div class="exemplo" >
         <h1>Design Responsivo (ou responsividade)</h1>
         <hr>
         <p>Conjunto de técnicas de desenvolvimento fornt-end visando a construção de sites em que o layout e a
