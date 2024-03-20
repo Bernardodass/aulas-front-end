@@ -25,17 +25,21 @@
 
     /* Regra de reset CSS
     É comum resetar valores de alguns elementos./propriedades visando evitar inconsitências nos resultados */
-    body, h1, h2, p {
+    body,
+    h1,
+    h2,
+    p {
         margin: 0;
         padding: 0;
     }
 
-    h2, p {
+    h2,
+    p {
         padding: 4px;
     }
 
     .topo {
-    background-color: hotpink;
+        background-color: hotpink;
     }
 
     h1 {
@@ -67,14 +71,33 @@
         background-color: red;
     }
 
-    .um, .dois, .tres {
+    .um,
+    .dois,
+    .tres {
         border: solid 3px black;
     }
 
     /* 2- regras de uso condicional
     (com media queries) */
+    @media screen and (min-width: 540px) {
+        .topo {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 {
+            width: 60%;
+        }
+
+        .menu {
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
 
 
+    }
 </style>
 
 <body>
