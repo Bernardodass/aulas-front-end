@@ -6,6 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    /* 1- regras de uso geral */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: verdana;
+        background-color: rgb(56, 68, 226);
+    }
+
+    .container {
+        background-color: aliceblue;
+        padding: 5px;
+        box-shadow: black 0 0 5px;
+    }
+
+    /* Regra de reset CSS
+    É comum resetar valores de alguns elementos./propriedades visando evitar inconsitências nos resultados */
+    body, h1, h2, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    h2, p {
+        padding: 4px;
+    }
+
+    .topo {
+    background-color: hotpink;
+    }
+
+    h1 {
+        background-color: blueviolet;
+    }
+
+    .menu {
+        background-color: pink;
+    }
+
+    .conteudo {
+        padding: 4px;
+        background-color: aqua;
+    }
+
+    .um {
+        background-color: orangered;
+    }
+
+    .dois {
+        background-color: burlywood;
+    }
+
+    .tres {
+        background-color: rgb(55, 243, 196);
+    }
+
+    .rodape {
+        background-color: red;
+    }
+
+    .um, .dois, .tres {
+        border: solid 3px black;
+    }
+
+    /* 2- regras de uso condicional
+    (com media queries) */
+
+
+</style>
 
 <body>
     <div class="container">
@@ -36,7 +106,7 @@
             </article>
         </main>
 
-        <footer>
+        <footer class="rodape">
             <h2>Rodapé</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fugit?</p>
         </footer>
