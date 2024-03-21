@@ -1,148 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Responsivo</title>
 <style>
-    /* 1- regras de uso geral */
-    * {
-        box-sizing: border-box;
-    }
+/* 1) Regras de uso geral */
+* { box-sizing: border-box; }  
 
-    body {
-        font-family: verdana;
-        background-color: rgb(56, 68, 226);
-    }
+body {
+    font-family: Verdana;
+    background-color: lightblue;
+}
 
-    .container {
-        background-color: aliceblue;
-        padding: 5px;
-        box-shadow: black 0 0 5px;
-    }
+.container {
+    background-color: white;
+    padding: 5px;
+    box-shadow: black 0 0 5px;
+}
 
-    /* Regra de reset CSS
-    É comum resetar valores de alguns elementos./propriedades visando evitar inconsitências nos resultados */
-    body,
-    h1,
-    h2,
-    p {
-        margin: 0;
-        padding: 0;
-    }
+/* Regra de reset CSS
+É comum resetar valores de alguns
+elementos/propriedades visando evitar
+inconsitências nos resultados. */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
 
-    h2,
-    p {
-        padding: 4px;
-    }
+h2, p { padding: 4px; }
 
+.topo { 
+    padding: 4px;
+    background-color: hotpink; 
+}
+
+h1 { background-color: yellow; }
+
+.menu { background-color: greenyellow; }
+
+.conteudo {
+    padding: 4px;
+    background-color: aquamarine;
+}
+
+.um, .dois, .tres { border: solid 1px black; }
+
+.um { background-color: orange; }
+.dois { background-color: pink; }
+.tres { background-color: yellowgreen; }
+
+.rodape { background-color: red; }
+
+
+
+
+/* 2) Regras de uso condicional
+(COM MEDIA QUERIES) */
+@media screen and (min-width: 540px) {
     .topo {
-        background-color: hotpink;
+        display: flex;
+        justify-content: space-between;
     }
 
-    h1 {
-        background-color: blueviolet;
+    h1 { width: 60%; }
+
+    .menu { 
+        width: 40%; 
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
-
-    .menu {
-        background-color: pink;
-    }
-
-    .conteudo {
-        padding: 4px;
-        background-color: aqua;
-    }
-
-    .um {
-        background-color: orangered;
-    }
-
-    .dois {
-        background-color: burlywood;
-    }
-
-    .tres {
-        background-color: rgb(55, 243, 196);
-    }
-
-    .rodape {
-        background-color: red;
-    }
-
-    .um,
-    .dois,
-    .tres {
-        border: solid 3px black;
-    }
-
-    /* 2- regras de uso condicional
-    (com media queries) */
-    @media screen and (min-width: 540px) {
-        .topo {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        h1 {
-            width: 60%;
-        }
-
-        .menu {
-            width: 40%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-    }
+}
 
 @media screen and (min-width: 740px) {
-    .conteudo {display: flex;
-                flex-wrap: wrap;}
-    .um {width:70% };
-    .dois {width: 30%;}
-    .tres {width: 100%;}
+    .conteudo { 
+        display: flex; 
+        gap: 10px; /* cria um espaço entre os itens */
+
+        /* Habilitando a "quebra" da linha (row).
+        Ou seja, se não tiver mais espaço para encaixar
+        lado a lado, acontecerá uma quebra (o elemento vai
+        para a linha de baixo) */
+        flex-wrap: wrap;
+    }
+    .um { width: 68%; }
+    .dois { width: 30%; }
+    .tres { width: 100%; }
 }
-    
 
 </style>
-
+</head>
 <body>
     <div class="container">
         <header class="topo">
-            <h1>Site exemplo</h1>
+            <h1>Site Exemplo</h1>
             <nav class="menu">
                 <a href="">Link</a>
                 <a href="">Link</a>
                 <a href="">Link</a>
             </nav>
         </header>
-
         <main class="conteudo">
             <article class="um">
                 <h2>Um</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit accusamus quam, culpa assumenda
-                    praesentium fuga repudiandae. Iure corrupti vero reiciendis.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, blanditiis veritatis voluptatum quod aperiam dolorum natus tenetur quasi quam illum.</p>
             </article>
+
             <article class="dois">
                 <h2>Dois</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nostrum earum perspiciatis in, at ut
-                    consequuntur temporibus officiis deleniti quod.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt rerum, cum sapiente voluptatem nam facere laboriosam reiciendis sunt harum dolores.</p>
             </article>
+
             <article class="tres">
                 <h2>Três</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti reiciendis eaque suscipit
-                    voluptates! Nemo molestiae aut porro architecto ex!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos deserunt odio rerum doloribus aliquid dignissimos ratione quaerat totam nisi repellat?</p>
             </article>
         </main>
-
+        
         <footer class="rodape">
             <h2>Rodapé</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fugit?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, et?</p>
         </footer>
-
+        
     </div>
 </body>
-
 </html>
